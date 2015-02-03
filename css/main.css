@@ -34,7 +34,7 @@ body {
 }
 
 @-webkit-keyframes sunset {
-	0% {background-color: #9ff;}
+	0% {background-color: lightblue;}
 
 	85%  {background-color: #282830;}
 
@@ -129,14 +129,59 @@ body {
 	width: 100%;
 	position: absolute;
 	opacity: 0;
+
+	-webkit-animation: pulseA 10s ease-in-out infinite;
+	animation: pulseA 10s ease-in-out infinite;
+}
+
+@-webkit-keyframes pulseA {
+	0% { opacity: 0.1; }
+	10% { opacity: 1; }
+	20% { opacity: 0.1; }
+	30% { opacity: 1; }
+	40% { opacity: 0.1; }
+	50% { opacity: 1; }
+	60% { opacity: 0.1; }
+	70% { opacity: 1; }
+	80% { opacity: 0.1; }
+	90% { opacity: 1; }
+	100% { opacity: 0.1; }
 }
 
 .stars-02 {
 	width: 100%;
 	position: absolute;
+
+	-webkit-animation: pulseB 10s ease-in-out infinite;
+	animation: pulseB 10s ease-in-out infinite;
+}
+
+@-webkit-keyframes pulseB {
+	0% { opacity: 0; }
+	10% { opacity: 0.5; }
+	20% { opacity: 1; }
+	30% { opacity: 0.5; }
+	40% { opacity: 0; }
+	50% { opacity: 0.5; }
+	60% { opacity: 1; }
+	70% { opacity: 0.5; }
+	80% { opacity: 1; }
+	90% { opacity: 0.5; }
+	100% { opacity: 0; }
 }
 
 .stars-03 {
 	width: 100%;
 	position: absolute;
 }
+
+
+
+
+
+
+
+
+
+
+
