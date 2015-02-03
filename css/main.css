@@ -17,39 +17,126 @@ html {
 	box-sizing: inherit;
 }
 
-.img-flex {
-
+body {
+	margin: 0;
 }
 
 .banner {
+	height: 50vh;
 	width: 100%;
+	overflow: hidden;
+	position: relative;
+
+	background-color: #282830;
+
+	-webkit-animation: sunset 8s linear;
+	animation: sunset 8s linear;
+}
+
+@-webkit-keyframes sunset {
+	0% {background-color: #9ff;}
+
+	85%  {background-color: #282830;}
+
+	100% {background-color: #282830;}
 }
 
 .rays {
+	width: 100%;
 	position: absolute;
+	top:0;
 
+	-webkit-animation: rays-rotate 10s linear;
+	animation: rays-rotate 10s linear;
+
+	transform-origin: center center;
 }
 
-.cloud-left {
+@-webkit-keyframes rays-rotate {
+	0% {transform: rotate(0deg);}
 
+	100%  {transform: rotate(360deg);}
+}
+
+.rays-wrap {
+	position: absolute;
+	top:-25vw;
+	left:25%;
+	width: 50%;
+
+	-webkit-animation: rays-raise 10s ease-in-out;
+	animation: rays-raise 10s ease-in-out;
+
+	transform-origin: center center;
+}
+
+@-webkit-keyframes rays-raise {
+	0% {transform: translateY(0px);}
+
+	100%  {transform: translateY(-50vh);}
+}
+
+
+.cloud-left {
+	width: 75%;
+	position: absolute;
+	left: 0;
+	bottom:0;
+
+	-webkit-animation: slide-left 10s ease-in-out;
+	animation: slide-left 10s ease-in-out;
+}
+
+@-webkit-keyframes slide-left {
+	0% {transform: translateX(0px);}
+
+	100%  {transform: translateX(-100vw);}
 }
 
 .cloud-right {
+	width: 75%;
 
+	position: absolute;
+	right: 0;
+	bottom: 0;
+
+	-webkit-animation: slide-right 10s ease-in-out;
+	animation: slide-right 10s ease-in-out;
 }
 
-.stars-01 {
+@-webkit-keyframes slide-right {
+	0% {transform: translateX(0px);}
 
+	100%  {transform: translateX(100vw);}
 }
 
-.stars-02 {
-
+.stars {
+	-webkit-animation: fadein 12s ease-in-out;
+	animation: fadein 12s ease-in-out;
 }
 
-.stars-03 {
-
+@-webkit-keyframes fadein {
+	from { opacity: 0; }
+	to { opacity: 1; }
 }
 
 .constellations {
+	height:100%;
+	position: absolute;
+}
 
+.stars-01 {
+	width: 100%;
+	position: absolute;
+	opacity: 0;
+}
+
+.stars-02 {
+	width: 100%;
+	position: absolute;
+}
+
+.stars-03 {
+	width: 100%;
+	position: absolute;
 }
