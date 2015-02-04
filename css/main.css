@@ -39,6 +39,12 @@ body {
 	100% 	{background-color: #282830;}
 }
 
+@keyframes sunset {
+	0% 		{background-color: lightblue;}
+	85%  	{background-color: #282830;}
+	100% 	{background-color: #282830;}
+}
+
 .banner-title {
   	color: white;	
   	font-family: 'Cedarville Cursive', cursive;
@@ -56,6 +62,13 @@ body {
 }
 
 @-webkit-keyframes fadein-a {
+	0% 		{opacity: 0;}
+	10% 	{opacity: 0;}
+	20% 	{opacity: 0;}
+	100%  	{opacity: 1;}
+}
+
+@-keyframes fadein-a {
 	0% 		{opacity: 0;}
 	10% 	{opacity: 0;}
 	20% 	{opacity: 0;}
@@ -125,6 +138,12 @@ body {
 	100%  	{transform: rotate(360deg); opacity: 0;}
 }
 
+@keyframes rays-rotate {
+	0% 		{transform: rotate(0deg); opacity: 1;}
+	50%		{opacity: 1;}
+	100%  	{transform: rotate(360deg); opacity: 0;}
+}
+
 .rays-wrap {
 	width: 50%;
 
@@ -138,6 +157,11 @@ body {
 }
 
 @-webkit-keyframes rays-raise {
+	0% 		{transform: translateY(0px);}
+	100%  	{transform: translateY(-50vh);}
+}
+
+@keyframes rays-raise {
 	0% 		{transform: translateY(0px);}
 	100%  	{transform: translateY(-50vh);}
 }
@@ -162,6 +186,12 @@ body {
 	100%  	{transform: translateX(-100vw); opacity: 0;}
 }
 
+@keyframes slide-left {
+	0% 		{transform: translateX(0px); opacity: 1;}
+	50%		{opacity: 1;}
+	100%  	{transform: translateX(-100vw); opacity: 0;}
+}
+
 .cloud-right {
 	width: 75%;
 
@@ -181,6 +211,11 @@ body {
 	100%  	{transform: translateX(100vw); opacity: 0;}
 }
 
+@keyframes slide-right {
+	0% 		{transform: translateX(0px); opacity: 1;}
+	50%		{opacity: 1;}
+	100%  	{transform: translateX(100vw); opacity: 0;}
+}
 
 /** Nighttime Animation **/
 .stars {
@@ -189,6 +224,11 @@ body {
 }
 
 @-webkit-keyframes fadein-b {
+	from 	{ opacity: 0; }
+	to 		{ opacity: 1; }
+}
+
+@keyframes fadein-b {
 	from 	{ opacity: 0; }
 	to 		{ opacity: 1; }
 }
@@ -227,6 +267,20 @@ body {
 	100% 	{ opacity: 0.1; }
 }
 
+@keyframes pulse-a {
+	0% 		{ opacity: 0.1; }
+	10% 	{ opacity: 1; }
+	20% 	{ opacity: 0.1; }
+	30% 	{ opacity: 1; }
+	40% 	{ opacity: 0.1; }
+	50% 	{ opacity: 1; }
+	60% 	{ opacity: 0.1; }
+	70% 	{ opacity: 1; }
+	80% 	{ opacity: 0.1; }
+	90% 	{ opacity: 1; }
+	100% 	{ opacity: 0.1; }
+}
+
 .stars-02 {
 	height: 100%;
 
@@ -241,6 +295,19 @@ body {
 }
 
 @-webkit-keyframes pulse-b {
+	0% 		{ opacity: 0; }
+	12% 	{ opacity: 0.5; }
+	24% 	{ opacity: 1; }
+	36% 	{ opacity: 0.5; }
+	48% 	{ opacity: 0; }
+	60% 	{ opacity: 0.5; }
+	72% 	{ opacity: 1; }
+	84% 	{ opacity: 0.5; }
+	96% 	{ opacity: 1; }
+	100% 	{ opacity: 0.5; }
+}
+
+@keyframes pulse-b {
 	0% 		{ opacity: 0; }
 	12% 	{ opacity: 0.5; }
 	24% 	{ opacity: 1; }
@@ -286,8 +353,3 @@ body {
 		font-size: 6rem;
 	}
 }
-
-
-
-
-
