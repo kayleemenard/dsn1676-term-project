@@ -42,18 +42,11 @@ body {
 }
 
 .banner-title {
-  	color: white;	
-  	font-family: 'Cedarville Cursive', cursive;
-  	font-size: 3rem;
-  	text-align: center;
   	width: 100%;
 
   	position: absolute;
   	top: 15vh;
   	transform-origin: center center;
-
-  	background-color: none;
-	letter-spacing: 0.25rem;
 
 	-webkit-animation: fadein-a 8s ease-in-out;
 	-moz-animation: fadein-a 8s ease-in-out;
@@ -65,6 +58,43 @@ body {
 	10% 	{opacity: 0;}
 	20% 	{opacity: 0;}
 	100%  	{opacity: 1;}
+}
+
+.banner-title-txt {
+  	color: white;	
+  	font-family: 'Cedarville Cursive', cursive;
+  	text-align: center;
+	letter-spacing: 0.25rem;
+	text-decoration: none;
+	transition: all 500ms linear;
+}
+
+.banner-title-txt:hover {
+	color: #ddb904;
+}
+
+.reset 
+.reset-txt{
+	margin: .25em;
+	padding: 1em;
+	position: absolute;
+	bottom: 0.75rem;
+	right: 1.5rem;
+
+	background-color: white;
+	border-radius: 50%;
+	transition: all 500ms linear;
+
+	color: #282830;
+	text-decoration: none;
+}
+
+.reset:hover 
+.reset-txt:hover {
+	background-color: #ddb904;
+
+	color: white;
+	text-decoration: none;
 }
 
 .rays {
@@ -227,7 +257,7 @@ body {
 }
 
 @media only screen and (min-width: 25em) {
-	.banner-title {
+	.banner-title-txt {
 	  font-size: 4rem;
 	}
 
@@ -245,7 +275,7 @@ body {
 }
 
 @media only screen and (min-width: 38em) {
-	.banner-title {
+	.banner-title-txt {
 	  font-size: 5rem;
 	}
 
@@ -263,7 +293,7 @@ body {
 }
 
 @media only screen and (min-width: 60em) {
-	.banner-title {
+	.banner-title-txt {
 	  font-size: 6rem;
 	}
 
