@@ -22,7 +22,7 @@ body {
 }
 
 .banner {
-	height: 50vh;
+	height: 100vh;
 	width: 100%;
 	overflow: hidden;
 
@@ -45,9 +45,7 @@ body {
   	width: 100%;
 
   	position: absolute;
-  	top: 15vh;
-  	transform-origin: center center;
-
+  	
 	-webkit-animation: fadein-a 8s ease-in-out;
 	-moz-animation: fadein-a 8s ease-in-out;
 	animation: fadein-a 8s ease-in-out;
@@ -188,7 +186,7 @@ body {
 }
 
 .constellations {
-	height:50vh;
+	height:100vh;
 
 	position: absolute;
 }
@@ -257,20 +255,24 @@ body {
 }
 
 @media only screen and (min-width: 25em) {
+	.banner-title {
+		top: calc(50%-4rem);
+	}
+
 	.banner-title-txt {
 	  font-size: 4rem;
 	}
 
 	.stars-01 {
-		height: 50vh;
+		height: 100vh;
 	}
 
 	.stars-02 {
-		height: 50vh;
+		height: 100vh;
 	}
 
 	.stars-03 {
-		height: 50vh;
+		height: 100vh;
 	}
 }
 
@@ -280,15 +282,15 @@ body {
 	}
 
 	.stars-01 {
-		height: 75vh;
+		height: 100vh;
 	}
 
 	.stars-02 {
-		height: 75vh;
+		height: 100vh;
 	}
 
 	.stars-03 {
-		height: 75vh;
+		height: 100vh;
 	}
 }
 
