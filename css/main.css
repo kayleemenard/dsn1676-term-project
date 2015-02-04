@@ -45,11 +45,11 @@ body {
   	font-family: 'Cedarville Cursive', cursive;
   	font-size: 3rem;
   	text-align: center;
+  	width: 100%;
 
   	position: absolute;
-  	top: 12vh;
+  	top: 15vh;
   	transform-origin: center center;
-  	width: 100%;
 
   	background-color: none;
 	letter-spacing: 0.25rem;
@@ -67,32 +67,33 @@ body {
 
 .rays {
 	width: 100%;
+
 	position: absolute;
 	top:0;
+	transform-origin: center center;
 
 	opacity: 0;
 
 	-webkit-animation: rays-rotate 10s linear;
 	animation: rays-rotate 10s linear;
-
-	transform-origin: center center;
 }
 
 @-webkit-keyframes rays-rotate {
 	0% 		{transform: rotate(0deg); opacity: 1;}
+	50%		{opacity: 1;}
 	100%  	{transform: rotate(360deg); opacity: 0;}
 }
 
 .rays-wrap {
+	width: 50%;
+
 	position: absolute;
 	top:-25vw;
 	left:25%;
-	width: 50%;
+	transform-origin: center center;
 
 	-webkit-animation: rays-raise 10s ease-in-out;
 	animation: rays-raise 10s ease-in-out;
-
-	transform-origin: center center;
 }
 
 @-webkit-keyframes rays-raise {
@@ -103,6 +104,7 @@ body {
 
 .cloud-left {
 	width: 75%;
+
 	position: absolute;
 	left: 0;
 	bottom:0;
@@ -150,14 +152,17 @@ body {
 
 .constellations {
 	height:50vh;
+
 	position: absolute;
 }
 
 .stars-01 {
 	height: 50vh;
+
 	position: absolute;
 	top: 0;
 	left: 0;
+
 	opacity: 0;
 
 	-webkit-animation: pulse-a 10s ease-in-out infinite;
@@ -236,15 +241,15 @@ body {
 	}
 
 	.stars-01 {
-		height: 50vh;
+		height: 75vh;
 	}
 
 	.stars-02 {
-		height: 50vh;
+		height: 75vh;
 	}
 
 	.stars-03 {
-		height: 50vh;
+		height: 75vh;
 	}
 }
 
