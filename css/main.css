@@ -43,8 +43,13 @@ body {
 
 .banner-title {
   	width: 100%;
+  	height: 100vh;
 
   	position: absolute;
+
+  	background-image: url(../images/stars-02.png), url(../images/constellations.png);
+  	background-size: cover;
+  	background-position: center;
   	
 	-webkit-animation: fadein-a 8s ease-in-out;
 	-moz-animation: fadein-a 8s ease-in-out;
@@ -65,6 +70,10 @@ body {
 	letter-spacing: 0.25rem;
 	text-decoration: none;
 	transition: all 500ms linear;
+}
+
+.banner-title-txt:a {
+	margin: 0 auto;
 }
 
 .banner-title-txt:hover {
@@ -174,6 +183,34 @@ body {
 	100%  	{transform: translateX(100vw); opacity: 0;}
 }
 
+.starry-night {
+	width: 100vw;
+	position: absolute;
+
+	background-image: url(../images/stars-01.png);
+	background-color: none;
+	background-position: center;
+
+ 	-webkit-animation: pulse-a 10s ease-in-out infinite;
+	-moz-animation: pulse-a 10s ease-in-out infinite;
+	animation: pulse-a 10s ease-in-out infinite;
+}
+
+@-webkit-keyframes pulse-a {
+	0% 		{ opacity: 0.1; }
+	10% 	{ opacity: 1; }
+	20% 	{ opacity: 0.1; }
+	30% 	{ opacity: 1; }
+	40% 	{ opacity: 0.1; }
+	50% 	{ opacity: 1; }
+	60% 	{ opacity: 0.1; }
+	70% 	{ opacity: 1; }
+	80% 	{ opacity: 0.1; }
+	90% 	{ opacity: 1; }
+	100% 	{ opacity: 0.1; }
+}
+
+/*
 .stars {
 	-webkit-animation: fadein-b 12s ease-in-out;
 	-moz-animation: fadein-b 12s ease-in-out;
@@ -254,15 +291,13 @@ body {
 	left: 0;
 }
 
+*/
+
 @media only screen and (min-width: 25em) {
-	.banner-title {
-		top: calc(50%-4rem);
-	}
-
 	.banner-title-txt {
-	  font-size: 4rem;
+		font-size: 4rem;
 	}
-
+/*
 	.stars-01 {
 		height: 100vh;
 	}
@@ -274,13 +309,15 @@ body {
 	.stars-03 {
 		height: 100vh;
 	}
+*/	
 }
 
 @media only screen and (min-width: 38em) {
+
 	.banner-title-txt {
 	  font-size: 5rem;
 	}
-
+/*
 	.stars-01 {
 		height: 100vh;
 	}
@@ -292,13 +329,15 @@ body {
 	.stars-03 {
 		height: 100vh;
 	}
+*/	
 }
 
 @media only screen and (min-width: 60em) {
+
 	.banner-title-txt {
 	  font-size: 6rem;
 	}
-
+/*	
 	.stars-01 {
 		height: 100vh;
 	}
@@ -310,6 +349,7 @@ body {
 	.stars-03 {
 		height: 100vh;
 	}
+*/
 }
 
 
