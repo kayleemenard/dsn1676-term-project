@@ -264,18 +264,19 @@ body {
 @media only screen and (min-width: 25em) {
 	.banner-title-txt {
 		padding-top: 20%;
-		font-size: 3rem;
+		font-size: 4rem;
 	}
 
-	.reset {
-		height: 10%;
+	.reset
+	.reset-text {
+
 	}
 }
 
 @media only screen and (min-width: 38em) {
 	.banner-title-txt {
 		padding-top: 20%;
-		font-size: 4rem;
+		font-size: 5rem;
 	}
 }
 
