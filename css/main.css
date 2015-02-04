@@ -43,13 +43,14 @@ body {
   	color: white;	
   	font-family: 'Cedarville Cursive', cursive;
   	font-size: 3rem;
+	letter-spacing: 0.25rem;
 
   	position: absolute;
   	top: 0;
-  	transform-origin: center center;
+  	width: 100%;
 
   	background-color: none;
-	letter-spacing: 0.25rem;
+  	transform-origin: center center;
 
 	-webkit-animation: fadein-a 8s ease-in-out;
 	animation: fadein-a 8s ease-in-out;
@@ -63,11 +64,15 @@ body {
 }
 
 .banner-title-txt {
+	display: block;
+	margin:  25% auto;
+
   	color: white;	
   	font-family: 'Cedarville Cursive', cursive;
-  	text-align: center;
 	letter-spacing: 0.25rem;
+  	text-align: center;
 	text-decoration: none;
+
 	transition: all 500ms linear;
 }
 
@@ -253,21 +258,15 @@ body {
 }
 
 @media only screen and (min-width: 25em) {
-	.banner-title {
-	  font-size: 4rem;
-	}
+
 }
 
 @media only screen and (min-width: 38em) {
-	.banner-title {
-	  font-size: 5rem;
-	}
+
 }
 
 @media only screen and (min-width: 60em) {
-	.banner-title {
-	  font-size: 6rem;
-	}
+
 }
 
 
