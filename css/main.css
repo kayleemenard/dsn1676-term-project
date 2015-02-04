@@ -22,7 +22,7 @@ body {
 }
 
 .banner {
-	height: 100vh;
+	height: 50vh;
 	width: 100%;
 	overflow: hidden;
 
@@ -31,7 +31,6 @@ body {
 	background-color: #282830;
 
 	-webkit-animation: sunset 8s linear;
-	-moz-animation: sunset 8s linear;
 	animation: sunset 8s linear;
 }
 
@@ -42,17 +41,20 @@ body {
 }
 
 .banner-title {
+  	color: white;	
+  	font-family: 'Cedarville Cursive', cursive;
+  	font-size: 3rem;
+  	text-align: center;
   	width: 100%;
-  	height: 100vh;
 
   	position: absolute;
+  	top: 15vh;
+  	transform-origin: center center;
 
-  	background-image: url(../images/stars-02.png), url(../images/constellations.png);
-  	background-size: cover;
-  	background-position: center;
-  	
+  	background-color: none;
+	letter-spacing: 0.25rem;
+
 	-webkit-animation: fadein-a 8s ease-in-out;
-	-moz-animation: fadein-a 8s ease-in-out;
 	animation: fadein-a 8s ease-in-out;
 }
 
@@ -61,47 +63,6 @@ body {
 	10% 	{opacity: 0;}
 	20% 	{opacity: 0;}
 	100%  	{opacity: 1;}
-}
-
-.banner-title-txt {
-  	color: white;	
-  	font-family: 'Cedarville Cursive', cursive;
-  	text-align: center;
-	letter-spacing: 0.25rem;
-	text-decoration: none;
-	transition: all 500ms linear;
-}
-
-.banner-title-txt:a {
-	margin: 0 auto;
-}
-
-.banner-title-txt:hover {
-	color: #ddb904;
-}
-
-.reset 
-.reset-txt{
-	margin: .25em;
-	padding: 1em;
-	position: absolute;
-	bottom: 0.75rem;
-	right: 1.5rem;
-
-	background-color: white;
-	border-radius: 50%;
-	transition: all 500ms linear;
-
-	color: #282830;
-	text-decoration: none;
-}
-
-.reset:hover 
-.reset-txt:hover {
-	background-color: #ddb904;
-
-	color: white;
-	text-decoration: none;
 }
 
 .rays {
@@ -114,7 +75,6 @@ body {
 	opacity: 0;
 
 	-webkit-animation: rays-rotate 10s linear;
-	-moz-animation: rays-rotate 10s linear;
 	animation: rays-rotate 10s linear;
 }
 
@@ -133,7 +93,6 @@ body {
 	transform-origin: center center;
 
 	-webkit-animation: rays-raise 10s ease-in-out;
-	-moz-animation: rays-raise 10s ease-in-out;
 	animation: rays-raise 10s ease-in-out;
 }
 
@@ -153,7 +112,6 @@ body {
 	opacity: 0;
 
 	-webkit-animation: slide-left 10s ease-in-out;
-	-moz-animation: slide-left 10s ease-in-out;
 	animation: slide-left 10s ease-in-out;
 }
 
@@ -173,7 +131,6 @@ body {
 	opacity: 0;
 
 	-webkit-animation: slide-right 10s ease-in-out;
-	-moz-animation: slide-right 10s ease-in-out;
 	animation: slide-right 10s ease-in-out;
 }
 
@@ -183,37 +140,8 @@ body {
 	100%  	{transform: translateX(100vw); opacity: 0;}
 }
 
-.starry-night {
-	width: 100vw;
-	position: absolute;
-
-	background-image: url(../images/stars-01.png);
-	background-color: none;
-	background-position: center;
-
- 	-webkit-animation: pulse-a 10s ease-in-out infinite;
-	-moz-animation: pulse-a 10s ease-in-out infinite;
-	animation: pulse-a 10s ease-in-out infinite;
-}
-
-@-webkit-keyframes pulse-a {
-	0% 		{ opacity: 0.1; }
-	10% 	{ opacity: 1; }
-	20% 	{ opacity: 0.1; }
-	30% 	{ opacity: 1; }
-	40% 	{ opacity: 0.1; }
-	50% 	{ opacity: 1; }
-	60% 	{ opacity: 0.1; }
-	70% 	{ opacity: 1; }
-	80% 	{ opacity: 0.1; }
-	90% 	{ opacity: 1; }
-	100% 	{ opacity: 0.1; }
-}
-
-/*
 .stars {
 	-webkit-animation: fadein-b 12s ease-in-out;
-	-moz-animation: fadein-b 12s ease-in-out;
 	animation: fadein-b 12s ease-in-out;
 }
 
@@ -223,7 +151,7 @@ body {
 }
 
 .constellations {
-	height:100vh;
+	height:50vh;
 
 	position: absolute;
 }
@@ -238,7 +166,6 @@ body {
 	opacity: 0;
 
 	-webkit-animation: pulse-a 10s ease-in-out infinite;
-	-moz-animation: pulse-a 10s ease-in-out infinite;
 	animation: pulse-a 10s ease-in-out infinite;
 }
 
@@ -266,7 +193,6 @@ body {
 	opacity: 0;
 
 	-webkit-animation: pulse-b 10s ease-in-out infinite;
-	-moz-animation: pulse-b 10s ease-in-out infinite;
 	animation: pulse-b 10s ease-in-out infinite;
 }
 
@@ -291,53 +217,47 @@ body {
 	left: 0;
 }
 
-*/
-
 @media only screen and (min-width: 25em) {
-	.banner-title-txt {
-		font-size: 4rem;
+	.banner-title {
+	  font-size: 4rem;
 	}
-/*
+
 	.stars-01 {
-		height: 100vh;
+		height: 50vh;
 	}
 
 	.stars-02 {
-		height: 100vh;
+		height: 50vh;
 	}
 
 	.stars-03 {
-		height: 100vh;
+		height: 50vh;
 	}
-*/	
 }
 
 @media only screen and (min-width: 38em) {
-
-	.banner-title-txt {
+	.banner-title {
 	  font-size: 5rem;
 	}
-/*
+
 	.stars-01 {
-		height: 100vh;
+		height: 75vh;
 	}
 
 	.stars-02 {
-		height: 100vh;
+		height: 75vh;
 	}
 
 	.stars-03 {
-		height: 100vh;
+		height: 75vh;
 	}
-*/	
 }
 
 @media only screen and (min-width: 60em) {
-
-	.banner-title-txt {
+	.banner-title {
 	  font-size: 6rem;
 	}
-/*	
+
 	.stars-01 {
 		height: 100vh;
 	}
@@ -349,10 +269,7 @@ body {
 	.stars-03 {
 		height: 100vh;
 	}
-*/
 }
-
-
 
 
 
