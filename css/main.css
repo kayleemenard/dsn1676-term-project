@@ -43,11 +43,9 @@ body {
   	color: white;	
   	font-family: 'Cedarville Cursive', cursive;
   	font-size: 3rem;
-  	text-align: center;
-  	width: 100%;
 
   	position: absolute;
-  	top: 15vh;
+  	top: 0;
   	transform-origin: center center;
 
   	background-color: none;
@@ -258,53 +256,17 @@ body {
 	.banner-title {
 	  font-size: 4rem;
 	}
-
-	.stars-01 {
-		height: 50vh;
-	}
-
-	.stars-02 {
-		height: 50vh;
-	}
-
-	.stars-03 {
-		height: 50vh;
-	}
 }
 
 @media only screen and (min-width: 38em) {
 	.banner-title {
 	  font-size: 5rem;
 	}
-
-	.stars-01 {
-		height: 75vh;
-	}
-
-	.stars-02 {
-		height: 75vh;
-	}
-
-	.stars-03 {
-		height: 75vh;
-	}
 }
 
 @media only screen and (min-width: 60em) {
 	.banner-title {
 	  font-size: 6rem;
-	}
-
-	.stars-01 {
-		height: 100vh;
-	}
-
-	.stars-02 {
-		height: 100vh;
-	}
-
-	.stars-03 {
-		height: 100vh;
 	}
 }
 
