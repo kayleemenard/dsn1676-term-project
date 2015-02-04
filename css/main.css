@@ -22,7 +22,7 @@ body {
 }
 
 .banner {
-	height: 62.75vh;
+	padding-top: 56.25%;
 	overflow: hidden;
 
 	position: relative;
@@ -187,13 +187,14 @@ body {
 }
 
 .constellations {
-	height:50vh;
+	height: 100%;
 
 	position: absolute;
+	top: 0;
 }
 
 .stars-01 {
-	height: 50vh;
+	height: 100%;
 
 	position: absolute;
 	top: 0;
@@ -220,7 +221,7 @@ body {
 }
 
 .stars-02 {
-	height: 50vh;
+	height: 100%;
 
 	position: absolute;
 	top: 0;
@@ -246,7 +247,7 @@ body {
 }
 
 .stars-03 {
-	height: 50vh;
+	height: 100%;
 
 	position: absolute;
 	top: 0;
