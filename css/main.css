@@ -46,13 +46,12 @@ body {
 }
 
 .banner-title {
-  	color: white;	
-  	font-family: 'Cedarville Cursive', cursive;
-	letter-spacing: 0.25rem;
-
   	position: absolute;
   	top: 0;
   	width: 100%;
+
+  	color: white;	
+  	font-family: 'Cedarville Cursive', cursive;
 
   	background-color: none;
   	transform-origin: center center;
@@ -82,6 +81,7 @@ body {
 
   	color: white;	
   	font-family: 'Cedarville Cursive', cursive;
+  	font-size: 1.5rem;
 	letter-spacing: 0.25rem;
   	text-align: center;
 	text-decoration: none;
@@ -99,7 +99,7 @@ body {
 	padding: 1em;
 	position: absolute;
 	bottom: 0.75rem;
-	right: 1.5rem;
+	right: 2%;
 
 	background-color: white;
 	border-radius: 50%;
