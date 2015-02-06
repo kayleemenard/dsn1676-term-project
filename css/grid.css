@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   letter-spacing: -0.31em;
-  text-rendering: optimizespeed;
+  text-rendering: optimizeSpeed;
   display: -webkit-flex;
   -webkit-flex-flow: row wrap;
   display: -ms-flexbox;
