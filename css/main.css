@@ -21,28 +21,22 @@ body {
 	margin: 0;
 }
 
-.btn-nav {
-	background-color: white;
-	border: none;
-	color: #282830;
+.color {
+	background-color: grey;
 }
 
-.btn-nav:hover {
+.btn-nav {
 	background-color: #ddb904;
+	border: none;
 	color: white;
-
-	transition: all 500ms linear;
+	font-family: 'Josefin Sans', sans-serif;
+	width: 100%;
 }
 
 .navigation {
 	display: none;
-}
-
-.navigation li {
-	list-style: none;
-
-  -webkit-animation: list-append 1s linear;
-  animation: list-append 500ms linear;
+	-webkit-animation: list-append 750ms linear;
+  	animation: list-append 750ms linear;
 }
 
 @-webkit-keyframes list-append {
@@ -61,6 +55,11 @@ body {
   100% {
     max-height: 2rem;
   }
+}
+
+.navigation li {
+	list-style: none;
+	width: 100%;
 }
 
 .js-nav-open {
