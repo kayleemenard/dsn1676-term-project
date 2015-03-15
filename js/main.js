@@ -1,17 +1,22 @@
 var $btnNav = $('.btn-nav');
 var $nav = $('.navigation');
 
-var $thumbnails = $('.zodiac');
-var $lbImg = $('.lightbox-image');
-var $lb = $('.lightbox');
+var $thumbs = $('.zodiac');
+var $lightboxImg = $('.lightbox-image');
+var $lightbox = $('.lightbox');
+var $btnClose = $('.btn-close');
 
 $btnNav.on('click', function() {
 	$nav.toggleClass('js-nav-open');
 });
 
-$thumbnails.on('click', 'a', function(e) {
+$thumbs.on('click', '.preview', function(e) {
 	e.preventDefault();
 	var big = $(this).attr('href');
-	$lbImg.attr('src', big);
-	$lb.attr('data-state', 'visible');
-})
+	$lightboxImg.attr('a', big);
+	$lightbox.attr('data-state', 'visible');
+});
+
+$btnClose.on('click', function() {
+	$lightbox.attr('data-state', 'hidden');
+});
