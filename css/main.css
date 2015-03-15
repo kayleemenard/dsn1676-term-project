@@ -21,19 +21,15 @@ body {
 	margin: 0;
 }
 
-.js-btn-nav {
-  animation: list-append 200ms linear;
-}
-.list {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-
-  overflow: hidden;
-  overflow-y: auto;
+.navigation {
+	display: none;
 }
 
-.list li {
+.js-panel-open {
+	display: block;
+}
+
+li {
   padding: 0.5rem;
 
   background-color: plum;
