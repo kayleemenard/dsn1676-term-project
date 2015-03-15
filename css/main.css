@@ -397,10 +397,13 @@ body {
 	bottom: 0;
 	background-color: rgba(0,0,0,0.5);
 	opacity: 0;
+	transition: all 200ms ease-out;
 }
 
 .lightbox[data-state="visible"] {
 	opacity: 1;
+	left: 0;
+	right: 0;
 }
 
 .lightbox-container {
@@ -418,26 +421,19 @@ body {
 	width: 100%;
 }
 
-.lightbox-content {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: calc(100% - 2em);
-}
-
-.zodiac a{
+.thumbnails a{
 	background-color: black;
 	color: #ddb904;
+	display: inline-block;
 	text-decoration: none;
 	text-align: center;
+	width: 100%;
 }
 
 .preview {
-	background-color: black;
 	padding-top: 45%; 
 	padding-bottom: 45%;
 }
-
 
 /********************************************************** Media Queries*/
 
