@@ -1,4 +1,4 @@
-var $btnNav = $('btn-nav');
+var $btnNav = $('.btn-nav');
 var $nav = $('.navigation');
 
 $btnNav.on('click', function() {
