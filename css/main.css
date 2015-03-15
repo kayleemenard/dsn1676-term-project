@@ -72,7 +72,8 @@ body {
 	display: block;
 }
 
-/* ANIMATED BANNER */
+/********************************************************** ANIMATED BANNER */
+
 .banner {
 	padding-top: 56.25%;
 	overflow: hidden;
@@ -144,7 +145,7 @@ body {
 	color: #ddb904;
 }
 
-/* Start Spotting Button */
+/********************************************************** Start Spotting Button */
 
 .scroll 
 .scroll-txt{
@@ -174,7 +175,7 @@ body {
 	text-decoration: none;
 }
 
-/** Daylight Animations **/
+/********************************************************** Daylight Animations **/
 
 .rays {
 	width: 100%;
@@ -222,7 +223,6 @@ body {
 	0% 		{transform: translateY(0px);}
 	100%  	{transform: translateY(-50vh);}
 }
-
 
 .cloud-left {
 	width: 75%;
@@ -274,7 +274,7 @@ body {
 	100%  	{transform: translateX(100vw); opacity: 0;}
 }
 
-/** Nighttime Animation **/
+/********************************************************** Nighttime Animation **/
 .stars {
 	-webkit-animation: fadein-b 12s ease-in-out;
 	animation: fadein-b 12s ease-in-out;
@@ -384,6 +384,35 @@ body {
 	top: 0;
 	left: 0;
 }
+
+/********************************************************** Lightbox */
+
+.lightbox {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+
+.lightbox[data-state="visible"] {
+	display: block;
+}
+
+.lightbox-content {
+	position: absolute;
+	left: 15px;
+	right: 15px;
+	top: 15px;
+	bottom: 15px;
+	background-color: #fff;
+	box-shadow: 1px 1px 4px #000;
+}
+
+
+/********************************************************** Media Queries*/
 
 @media only screen and (min-width: 25em) {
 	.banner-title-txt {
