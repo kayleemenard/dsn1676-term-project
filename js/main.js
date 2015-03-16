@@ -11,12 +11,12 @@ $btnNav.on('click', function() {
 });
 
 $thumbs.on('click', 'a', function(e) {
-// 	e.preventDefault();
-// 	var big = $(this).attr('.preview');
-// 	$lbImg.attr('href', big);
-// 	$lbx.attr('data-state', 'visible');
-// });
+	e.preventDefault();
+	var big = $(this).attr('href');
+	$lbImg.attr('src', big);
+	$lb.attr('data-state', 'visible');
+});
 
-// $btnClose.on('click', function() {
-// 	$lightbox.attr('data-state', 'hidden');
+$btnClose.on('click', function () {
+	$lb.attr('data-state', 'hidden');
 });
