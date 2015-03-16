@@ -27,8 +27,14 @@ body {
 	background-color: #ddb904;
 	border: none;
 	color: white;
-	font-family: 'Josefin Sans', sans-serif;
 	width: 100%;
+
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+}
+
+.btn-nav:hover {
+	color: #282830;
 }
 
 .navigation {
@@ -469,11 +475,19 @@ body {
 
 		display: block;
 	}
+
+	.lightbox-img {
+		width: 50%;
+	}
 }
 
 @media only screen and (min-width: 60em) {
 	.banner-title-txt {
 		padding-top: 20%;
 		font-size: 6rem;
+	}
+
+	.lightbox-img {
+		width: 50%;
 	}
 }
