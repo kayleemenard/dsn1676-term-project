@@ -474,9 +474,9 @@ footer {
 	text-align: center;
 }
 
-#cityscape {
-	-webkit-animation: sunset-banner 8s linear alternate infinite;
-	animation: sunset 8s linear alternate infinite;
+#sky {
+	-webkit-animation: sunset-banner 8s linear;
+	animation: sunset-banner 8s linear;
 }
 
 @-webkit-keyframes sunset-banner {
@@ -489,6 +489,20 @@ footer {
 	100% 	{background-color: #282830;}
 }
 
+#windows {
+	-webkit-animation: sunset-banner 8s linear alternate infinite;
+	animation: sunset-banner 8s linear alternate infinite;
+}
+
+@-webkit-keyframes sunset-banner {
+	0% 		{background-color: lightblue;}
+	100% 	{background-color: #282830;}
+}
+
+@keyframes sunset-banner {
+	0% 		{background-color: lightblue;}
+	100% 	{background-color: #282830;}
+}
 /********************************************************** Media Queries*/
 
 @media only screen and (min-width: 25em) {
