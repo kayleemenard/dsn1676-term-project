@@ -23,6 +23,13 @@ body {
 	margin: 0;
 }
 
+img {
+	overflow: hidden;
+	width: 100%;
+}
+
+
+/************************************************************ Navigation Menu */
 .btn-nav {
 	background-color: #ddb904;
 	border: none;
@@ -449,6 +456,37 @@ body {
 .preview {
 	padding-top: 45%; 
 	padding-bottom: 45%;
+}
+
+/********************************************************** Footer*/
+footer {
+	background-color: black;
+}
+
+.site-info {
+	bottom: 0;
+	display:block;
+	height: 5em;
+}
+
+.site-info p {
+	color: #ddb904;
+	text-align: center;
+}
+
+#background {
+	-webkit-animation: sunset-banner 8s linear alternate infinite;
+	animation: sunset 8s linear alternate infinite;
+}
+
+@-webkit-keyframes sunset-banner {
+	0% 		{background-color: lightblue;}
+	100% 	{background-color: #282830;}
+}
+
+@keyframes sunset-banner {
+	0% 		{background-color: lightblue;}
+	100% 	{background-color: #282830;}
 }
 
 /********************************************************** Media Queries*/
