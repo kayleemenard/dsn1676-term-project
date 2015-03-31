@@ -474,7 +474,7 @@ footer {
 	text-align: center;
 }
 
-#background {
+#cityscape {
 	-webkit-animation: sunset-banner 8s linear alternate infinite;
 	animation: sunset 8s linear alternate infinite;
 }
