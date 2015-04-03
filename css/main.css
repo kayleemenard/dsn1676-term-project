@@ -459,19 +459,20 @@ img {
 }
 
 /********************************************************** Footer*/
-footer {
-	background-color: black;
+.svg-container {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 50%;
+	overflow: hidden;
 }
 
-.site-info {
+.svg-content {
+	display: inline-block;
+	position: absolute;
 	bottom: 0;
-	display:block;
-	height: 5em;
-}
-
-.site-info p {
-	color: #ddb904;
-	text-align: center;
+	left: 0;
+	overflow: hidden;
 }
 
 #sky {
@@ -503,6 +504,22 @@ footer {
 	0% 		{background-color: lightblue;}
 	100% 	{background-color: #282830;}
 }
+
+.site-info {
+	background-color: black;
+	bottom: 0;
+	display:block;
+	height: 5em;
+	overflow: hidden;
+	padding-bottom: 3em;
+}
+
+.site-info p {
+	color: #ddb904;
+	margin-top: 3em;
+	text-align: center;
+}
+
 /********************************************************** Media Queries*/
 
 @media only screen and (min-width: 25em) {
@@ -510,6 +527,7 @@ footer {
 		padding-top: 20%;
 		font-size: 4rem;
 	}
+
 }
 
 @media only screen and (min-width: 38em) {
