@@ -440,6 +440,11 @@ img {
   top: 15px;
 }
 
+.lightbox-img {
+  display: block;
+  width: 100%;
+}
+
 .lightbox-content {
   position: absolute;
   top: 50%;
@@ -529,11 +534,6 @@ footer {
 		font-size: 4rem;
 	}
 
-	.lightbox-img {
-		display: block;
-		width: 100%;
-	}
-
 }
 
 @media only screen and (min-width: 38em) {
@@ -553,8 +553,7 @@ footer {
 	}
 
 	.lightbox-img {
-		display: block;
-		width: 100%;
+		width: 50%;
 	}
 }
 
@@ -565,7 +564,6 @@ footer {
 	}
 
 	.lightbox-img {
-		display: block;
-		width: 100%;
+		width: 50%;
 	}
 }
