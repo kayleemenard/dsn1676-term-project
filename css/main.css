@@ -458,9 +458,13 @@ img {
 	padding-bottom: 45%;
 }
 
-/********************************************************** Footer*/
+/********************************************************** Footer and Cityscape Banner */
 .banner-bottom {
 	width: 100%;
+}
+
+footer {
+	background-color: black;
 }
 
 .buildings {
