@@ -463,19 +463,48 @@ img {
 	width: 100%;
 }
 
-#sky {
-	animation: bob-head 1s ease-in-out infinite alternate;
-	-webkit-animation: bob-head 1s ease-in-out infinite alternate;
+.buildings {
+	fill: black;
 }
 
-@keyframes bob-head {
-	0% {transform: translateY(0);}
-	100% {transform: translateY(20px);}
+.sky {
+	fill: lightblue;
+
+	-webkit-animation: cityscape-sunset 8s linear infinite alternate;
+	animation: cityscape-sunset 8s linear infinite alternate;
 }
 
-@-webkit-keyframes bob-head {
-	0% {transform: translateY(0);}
-	100% {transform: translateY(20px);}
+@-webkit-keyframes cityscape-sunset {
+	0% {fill: lightblue;}
+	10% {fill: lightblue;}
+	85% {fill: #282830;}
+	100% {fill: #282830;}
+}
+
+@keyframes cityscape-sunset {
+	0% {fill: lightblue;}
+	10% {fill: lightblue;}
+	85% {fill: #282830;}
+	100% {fill: #282830;}
+}
+
+.windows {
+	fill: black;
+
+	-webkit-animation: cityscape-windows 8s linear infinite alternate;
+	animation: cityscape-windows 8s linear infinite alternate;
+}
+
+@-webkit-keyframes cityscape-windows {
+	0% {fill: black;}
+	85% {fill: #ddb904;}
+	100% {fill: #ddb904;}
+}
+
+@keyframes cityscape-windows {
+	0% {fill: black;}
+	85% {fill: #ddb904;}
+	100% {fill: #ddb904;}
 }
 
 .site-info {
