@@ -459,64 +459,37 @@ img {
 }
 
 /********************************************************** Footer*/
-.svg-container {
-	display: inline-block;
-	position: relative;
+.banner-bottom {
 	width: 100%;
-	padding-bottom: 50%;
-	overflow: hidden;
-}
-
-.svg-content {
-	display: inline-block;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	overflow: hidden;
 }
 
 #sky {
-	-webkit-animation: sunset-banner 8s linear;
-	animation: sunset-banner 8s linear;
+	animation: bob-head 1s ease-in-out infinite alternate;
+	-webkit-animation: bob-head 1s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes sunset-banner {
-	0% 		{background-color: lightblue;}
-	100% 	{background-color: #282830;}
+@keyframes bob-head {
+	0% {transform: translateY(0);}
+	100% {transform: translateY(20px);}
 }
 
-@keyframes sunset-banner {
-	0% 		{background-color: lightblue;}
-	100% 	{background-color: #282830;}
-}
-
-#windows {
-	-webkit-animation: sunset-banner 8s linear alternate infinite;
-	animation: sunset-banner 8s linear alternate infinite;
-}
-
-@-webkit-keyframes sunset-banner {
-	0% 		{background-color: lightblue;}
-	100% 	{background-color: #282830;}
-}
-
-@keyframes sunset-banner {
-	0% 		{background-color: lightblue;}
-	100% 	{background-color: #282830;}
+@-webkit-keyframes bob-head {
+	0% {transform: translateY(0);}
+	100% {transform: translateY(20px);}
 }
 
 .site-info {
 	background-color: black;
 	bottom: 0;
 	display:block;
-	height: 5em;
+	height: 10em;
 	overflow: hidden;
-	padding-bottom: 3em;
+	padding-bottom: 5em;
 }
 
 .site-info p {
 	color: #ddb904;
-	margin-top: 3em;
+	margin-top: 4.5em;
 	text-align: center;
 }
 
