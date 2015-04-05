@@ -455,14 +455,6 @@ img {
   right: 0;
 }
 
-.lightbox-container {
-  position: absolute;
-  left: 15%;
-  right: 15%;
-  bottom: 15%;
-  top: 15%;
-}
-
 .lightbox-image {
   display: block;
   width: 100%;
@@ -561,6 +553,13 @@ footer {
 	  width: calc(100vw - 25vw);
 	}
 
+	.lightbox-container {
+	  position: absolute;
+	  left: 5px;
+	  right: 5px;
+	  bottom: 5px;
+	  top: 5px;
+	}
 
 }
 
@@ -580,6 +579,14 @@ footer {
 		display: block;
 	}
 
+	.lightbox-container {
+	  position: absolute;
+	  left: 15%;
+	  right: 15%;
+	  bottom: 15%;
+	  top: 15%;
+	}
+
 	.lightbox-content {
 	  width: calc(100vw - 50vw);
 	}
@@ -589,6 +596,14 @@ footer {
 	.banner-title-txt {
 		padding-top: 20%;
 		font-size: 6rem;
+	}
+
+	.lightbox-container {
+	  position: absolute;
+	  left: 15%;
+	  right: 15%;
+	  bottom: 15%;
+	  top: 15%;
 	}
 
 	.lightbox-content {
