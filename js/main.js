@@ -24,6 +24,11 @@ $btnClose.on('click', function () {
 
 var $cityscape = $('.banner-bottom');
 
-$cityscape.waypoint(function () {
-	$cityscape.addClass('js-active-city');
+$cityscape.waypoint(function (direction) {
+	if (direction == 'down') {
+		$cityscape.addClass('js-active-city');
+	}
+	else {
+		$cityscape.removeClass('js-active-city');
+	}
 }, { offset: '85%' } );
