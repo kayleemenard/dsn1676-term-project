@@ -488,19 +488,21 @@ footer {
 
 .sky {
 	fill: lightblue;
-
-	-webkit-animation: cityscape-sunset 8s linear infinite alternate;
-	animation: cityscape-sunset 8s linear infinite alternate;
 }
 
-@-webkit-keyframes cityscape-sunset {
+.js-active-city .sky {
+	-webkit-animation: cityscape-sky 5s linear infinite alternate;
+	animation: cityscape-sky 5s linear infinite alternate;
+}
+
+@-webkit-keyframes cityscape-sky {
 	0% {fill: lightblue;}
 	10% {fill: lightblue;}
 	85% {fill: #282830;}
 	100% {fill: #282830;}
 }
 
-@keyframes cityscape-sunset {
+@keyframes cityscape-sky {
 	0% {fill: lightblue;}
 	10% {fill: lightblue;}
 	85% {fill: #282830;}
@@ -509,9 +511,11 @@ footer {
 
 .windows {
 	fill: black;
+}
 
-	-webkit-animation: cityscape-windows 8s linear infinite alternate;
-	animation: cityscape-windows 8s linear infinite alternate;
+.js-active-city .windows {
+	-webkit-animation: cityscape-windows 5s linear infinite alternate;
+	animation: cityscape-windows 5s linear infinite alternate;
 }
 
 @-webkit-keyframes cityscape-windows {

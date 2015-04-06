@@ -20,3 +20,10 @@ $thumbs.on('click', 'a', function(e) {
 $btnClose.on('click', function () {
 	$lb.attr('data-state', 'hidden');
 });
+
+
+var $cityscape = $('.banner-bottom');
+
+$cityscape.waypoint(function () {
+	$cityscape.addClass('js-active-city');
+}, { offset: '85%' } );
