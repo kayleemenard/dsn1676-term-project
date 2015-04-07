@@ -522,7 +522,7 @@ footer {
 
 .site-info {
 	background-color: black;
-	display:block;
+	display: block;
 	height: 10em;
 	overflow: hidden;
 	padding-bottom: 5em;
@@ -532,6 +532,16 @@ footer {
 	color: #ddb904;
 	margin-top: 4.5em;
 	text-align: center;
+}
+
+.site-info a {
+	color: #ddb904;
+	display: inline-block;
+	text-align: center;
+}
+
+.site-info a:hover {
+	color: white;
 }
 
 /********************************************************** Media Queries*/
@@ -575,5 +585,12 @@ footer {
 
 	.lightbox-content {
 		width: calc(100vw - 50vw);
+	}
+
+	.site-info p,
+	.site-info a {
+		display: inline-block;
+		float: left;
+		margin-top: 4.5em;
 	}
 }
