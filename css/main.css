@@ -474,10 +474,12 @@ footer {
 
 .buildings {
 	fill: black;
+	width: 100%;
 }
 
 .sky {
 	fill: lightblue;
+	width: 100%;
 }
 
 .js-active-city .sky {
@@ -501,6 +503,7 @@ footer {
 
 .windows {
 	fill: black;
+	width: 100%;
 }
 
 .js-active-city .windows {
@@ -519,6 +522,8 @@ footer {
 	85% {fill: #ddb904;}
 	100% {fill: #ddb904;}
 }
+
+/********************************************************** Footer Info */
 
 .site-info {
 	background-color: black;
@@ -544,7 +549,7 @@ footer {
 	color: white;
 }
 
-/********************************************************** Media Queries*/
+/********************************************************** Media Queries */
 
 @media only screen and (min-width: 25em) {
 	.banner-title-txt {
