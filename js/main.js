@@ -23,6 +23,10 @@ $btnClose.on('click', function () {
 
 $('.nav').localScroll();
 
+$('.scroll').localScroll();
+
+$('.site-info').localScroll();
+
 
 var $cityscape = $('.banner-bottom');
 
