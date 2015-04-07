@@ -598,4 +598,14 @@ footer {
 		float: left;
 		margin-top: 4.5em;
 	}
+
+	.site-info p {
+		padding-left: 2em;
+		text-align: left;
+	}
+
+	.site-info a {
+		padding-right: 2em;
+		text-align: right;
+	}
 }
