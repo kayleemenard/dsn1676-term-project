@@ -44,11 +44,16 @@ img {
 	color: #282830;
 }
 
-.navigation {
+.nav {
 	display: none;
 }
 
-.navigation li {
+.nav a {
+	color: #282830;
+	text-decoration: none;
+}
+
+.nav li {
 	list-style: none;
 	width: 100%;
 
@@ -74,7 +79,7 @@ img {
   }
 }
 
-.navigation li:hover {
+.nav li:hover {
 	font-size: 1rem;
 	font-weight: bold;
 	overflow: hidden;

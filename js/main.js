@@ -1,5 +1,5 @@
 var $btnNav = $('.btn-nav');
-var $nav = $('.navigation');
+var $nav = $('.nav');
 
 var $thumbs = $('.thumbnails');
 var $lbImg = $('.lightbox-image');
@@ -20,6 +20,8 @@ $thumbs.on('click', 'a', function(e) {
 $btnClose.on('click', function () {
 	$lb.attr('data-state', 'hidden');
 });
+
+$('.nav').localScroll();
 
 
 var $cityscape = $('.banner-bottom');
