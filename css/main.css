@@ -530,6 +530,10 @@ img {
 	color: #ddb904;
 }
 
+.planet-info p {
+	line-height: 1.25em;
+}
+
 /********************************************************** Footer and Cityscape Banner */
 .banner-bottom {
 	width: 100%;
