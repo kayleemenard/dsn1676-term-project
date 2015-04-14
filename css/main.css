@@ -465,10 +465,53 @@ img {
 }
 
 /********************************************************** Notable Stars Slideshow */
+.star-slideshow {
+	background-color: #ddb904;
+}
+
 #slideshow-container {
 	height: 45vh;
 	margin: 0 auto;
+	position: relative;
 	width: 100%;
+}
+
+#slideshow-img {
+	height: 45vh;
+	margin: 0 auto;
+	position: absolute;
+}
+
+#left-pointer {
+	height: 45vh;
+	position: absolute;
+		left: 0;
+		top: 0;
+	width: 10vw;	
+}
+
+#right-pointer {
+	height: 45vh;
+	position: absolute;
+		right: 0;
+		top: 0;
+	width: 10vw;	
+}
+
+.arrow-left {
+	height: 50px;
+	width: 50px;
+	position: absolute;
+		left: 0;
+		top: 40%;
+}
+
+.arrow-right {
+	height: 50px;
+	width: 50px;
+	position: absolute;
+		right: 0;
+		top: 40%;	
 }
 
 

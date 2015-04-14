@@ -1,3 +1,4 @@
+/********************************************************** Navigation Menu */
 var $btnNav = $('.btn-nav');
 var $nav = $('.nav');
 
@@ -21,13 +22,26 @@ $btnClose.on('click', function () {
 	$lb.attr('data-state', 'hidden');
 });
 
+/********************************************************** Star Slideshow */
+var $imgcount = 1;
+var $total = 8;
+
+function $slide(x) {
+	var starImage = document.getElementById('slideshow-img');
+	imagecount = 'imagecount' + x;
+	if(imagecount > total){ imagecount = 1;}
+	if(imagecount < 1){ imagecount =total;}
+	starImage.src = "images/slideshow-img" + imagecount + '.svg';
+}
+
+/********************************************************** Smooth Scrolling */
 $('.nav').localScroll();
 
 $('.scroll').localScroll();
 
 $('.site-info').localScroll();
 
-
+/********************************************************** Bottom Animated Banner */
 var $cityscape = $('.banner-bottom');
 
 $cityscape.waypoint(function (direction) {
