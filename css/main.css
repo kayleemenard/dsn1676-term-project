@@ -464,6 +464,17 @@ img {
 	padding-bottom: 45%;
 }
 
+/********************************************************** Planet Images and Description */
+.planet-img {
+	display: block;
+	height: 100%;
+}
+
+.planet-info {
+	display: block;
+	overflow: hidden;
+}
+
 /********************************************************** Footer and Cityscape Banner */
 .banner-bottom {
 	width: 100%;
@@ -576,6 +587,10 @@ footer {
 		position: absolute;
 			bottom: 2%;
 			right: 50%;
+	}
+
+	.planet-info {
+		padding-left: 0.7500em;
 	}
 
 	.lightbox-content {
