@@ -475,6 +475,10 @@ img {
 	overflow: hidden;
 }
 
+.planet-info h4 {
+	color: #ddb904;
+}
+
 /********************************************************** Footer and Cityscape Banner */
 .banner-bottom {
 	width: 100%;
