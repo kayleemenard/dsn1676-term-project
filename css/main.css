@@ -21,6 +21,7 @@ html {
 
 body {
 	margin: 0;
+	padding: 0;
 }
 
 img {
@@ -46,6 +47,7 @@ img {
 
 .nav {
 	display: none;
+	overflow: hidden;
 
   	animation: list-append 250ms linear;
   	-webkit-animation: list-append 250ms linear;
@@ -453,7 +455,9 @@ img {
 .lightbox-content {
 	position: absolute;
 		top: 50%;
+		bottom: -50%;
 		left: 50%;
+		right: -50%;
 	width: calc(100vw - 25vw);
 
 	transform: translate(-50%, -50%);
@@ -648,12 +652,12 @@ footer {
 			right: 50%;
 	}
 
-	.planet-info {
-		padding-left: 0.7500em;
-	}
-
 	.lightbox-content {
 		width: calc(100vw - 50vw);
+	}
+
+	.planet-info {
+		padding-left: 0.7500em;
 	}
 }
 
@@ -661,10 +665,6 @@ footer {
 	.banner-title-txt {
 		font-size: 6rem;
 		padding-top: 20%;
-	}
-
-	.lightbox-content {
-		width: calc(100vw - 50vw);
 	}
 
 	.site-info p,
