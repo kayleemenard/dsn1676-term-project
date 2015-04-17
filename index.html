@@ -12,6 +12,39 @@
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:300,300italic,400,400italic,700' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+	<script type="text/javascript">
+		var nrImg = 8;
+		var IntSeconds = 6;
+
+		function Load() {
+			nrShown = 0;
+			Vect = new Array (nrImg + 10);
+			Vect[0] = document.getElementById('img1');
+			Vect[0].style.visibility = "visible";
+			for (var i = 1; i < nrImg; i++) {
+				Vect[i] = document.getElementById('slideshow-img' + (i + 1))
+			}
+		}
+		function next() {
+			nrShown++;
+			if (nrShown == nrImg)
+				nrShown= 0;
+			Effect();
+		}
+		function prev() {
+			nrShown--;
+			if (nrShown == -1)
+				nrShown = nrImg -1;
+		}
+		function Effect() {
+			for(var i=0;i<nrImg;i++) {
+				Vect[i].style.visibility = 'hidden';
+			}
+			Vect[nrShown].style.visibility = 'visible';
+
+		}
+	</script>
 </head>
 <body id="top" class="push-0 pad-0">
 <!-- Menu -->
@@ -122,12 +155,25 @@
 			</div>	
 		</div>
 <!--  Notable Stars Slideshow -->
-		<section class="star-slideshow island push">
+		<section class="star-slideshow island push" onload="Load()">
 			<h2 class="text-center island push-0 white" id="stars">Notable Stars</h2>
 			<div id="slideshow-container">
-				<img id="slideshow-img" src="images/star-slideshow" />
-				<div id="left-pointer"><img onClick="slideshow-img(-1)" class="arrow-left" src="images/slideshow-arrow-left.svg" alt="Left arrow button for slideshow" /></div>
-				<div id="right-pointer"><img onClick="slideshow-img(1)" class="arrow-right" src="images/slideshow-arrow-right.svg" alt="Right arrow button for slideshow" /></div>
+				<div id="slideshow-img">
+					<img id="img1" src="images/star-slideshow-1.svg" alt="Graphic illustration of the star, Sirus, and a breif description" />
+					<img id="img2" src="images/star-slideshow-2.svg" alt="Graphic illustration of the star, Sirus, and a breif description" />
+					<img id="img3" src="images/star-slideshow-3.svg" alt="Graphic illustration of the star, Sirus, and a breif description" />
+					<img id="img4" src="images/star-slideshow-4.svg" alt="Graphic illustration of the star, Sirus, and a breif description" />
+					<img id="img5" src="images/star-slideshow-5.svg" alt="Graphic illustration of the star, Sirus, and a breif description" />
+					<img id="img6" src="images/star-slideshow-6.svg" alt="Graphic illustration of the star, Sirus, and a breif description" />
+					<img id="img7" src="images/star-slideshow-7.svg" alt="Graphic illustration of the star, Sirus, and a breif description" />
+					<img id="img8" src="images/star-slideshow-8.svg" alt="Graphic illustration of the star, Sirus, and a breif description" />
+				</div>
+				<div id="left-pointer">
+					<img onClick="prev()" class="arrow-left" src="images/slideshow-arrow-left.svg" alt="Left arrow button for slideshow" />
+				</div>
+				<div id="right-pointer">
+					<img onClick="next()" class="arrow-right" src="images/slideshow-arrow-right.svg" alt="Right arrow button for slideshow" />
+				</div>
 			</div>
 		</section>	
 <!--  Planets -->

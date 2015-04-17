@@ -472,19 +472,23 @@ img {
 }
 
 #slideshow-container {
+	display: block;
 	height: 45vh;
 	margin: 0 auto;
 	position: relative;
 	width: 100%;
 }
 
-#slideshow-img {
-	height: 45vh;
+#slideshow-img img{
+	height: 40vh;
 	margin: 0 auto;
 	position: absolute;
+		left:0;
+		top:0;
 }
 
 #left-pointer {
+	display: block;
 	height: 45vh;
 	position: absolute;
 		left: 0;
@@ -493,6 +497,7 @@ img {
 }
 
 #right-pointer {
+	display: block;
 	height: 45vh;
 	position: absolute;
 		right: 0;
@@ -501,21 +506,20 @@ img {
 }
 
 .arrow-left {
-	height: 50px;
-	width: 50px;
+	height: 40px;
+	width: 40px;
 	position: absolute;
 		left: 0;
 		top: 40%;
 }
 
 .arrow-right {
-	height: 50px;
-	width: 50px;
+	height: 40px;
+	width: 40px;
 	position: absolute;
 		right: 0;
 		top: 40%;	
 }
-
 
 /********************************************************** Planet Images and Description */
 .planet-img {
@@ -649,6 +653,32 @@ footer {
 			bottom: 2%;
 			right: 50%;
 	}
+
+	#slideshow-container {
+		height: 60vh;
+		margin: 0 auto;
+		position: relative;
+		width: 100%;
+	}
+
+	#slideshow-img {
+		height: 60vh;
+		margin: 0 auto;
+		position: absolute;
+	}
+
+	.arrow-left {
+		height: 50px;
+		width: 50px;
+		top: 50%;
+	}
+
+	.arrow-right {
+		height: 50px;
+		width: 50px;
+		top: 50%;
+	}
+
 
 	.planet-info {
 		padding-left: 0.7500em;
