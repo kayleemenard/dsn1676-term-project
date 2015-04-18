@@ -25,6 +25,10 @@ fieldset, pre, table {
   color: white;
 }
 
+.yellow {
+  color: #ddb904;
+}
+
 .yotta {
   font-size: 2.2807rem;
   line-height: 1.3154;
@@ -44,6 +48,7 @@ h1, .exa {
 h2, .peta {
   font-family: 'Cedarville Cursive', cursive;
   font-size: 1.6018rem;
+  letter-spacing: 1.25px;
   line-height: 1.8729;
 }
 

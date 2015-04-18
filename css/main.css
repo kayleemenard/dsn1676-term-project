@@ -495,7 +495,7 @@ img {
 
 /********************************************************** Notable Stars Slideshow */
 .star-slideshow {
-	background-color: #ddb904;
+	background-color: #282830;
 }
 
 .cycle-slideshow {
@@ -503,14 +503,13 @@ img {
 }
 
 .slideshow-directors {
-	color: white;
 	font-weight: bold;
 	width: 100%;
 }
 
 #prev:hover,
 #next:hover {
-	color: #282830;
+	color: white;
 }
 
 #prev {
