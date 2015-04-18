@@ -111,14 +111,21 @@ img {
 	100% 	{background-color: #282830;}
 }
 
-.banner-title {
-	color: white;	
-	font-family: 'Cedarville Cursive', cursive;
+.banner-title-txt,
+.banner-title-txt h1{
+	display: block;
+	color: white;
+	font-size: 1.5rem;
+	letter-spacing: 0.25rem;
 	position: absolute;
-		top: 0;
+		top: 25%;
+	text-align: center;
+	text-decoration: none;
+	transform-origin: center center;
 	width: 100%;
 
-	transform-origin: center center;
+	-webkit-transition: all 500ms linear;
+	transition: all 500ms linear;
 
 	-webkit-animation: fadein-a 8s ease-in-out;
 	animation: fadein-a 8s ease-in-out;
@@ -136,21 +143,6 @@ img {
 	10% 	{opacity: 0;}
 	20% 	{opacity: 0;}
 	100%	{opacity: 1;}
-}
-
-.banner-title-txt {
-	display: block;
-	color: white;	
-	font-family: 'Cedarville Cursive', cursive;
-	font-size: 1.5rem;
-	letter-spacing: 0.25rem;
-	margin:	auto;
-	padding-top: 20%;
-	text-align: center;
-	text-decoration: none;
-
-	-webkit-transition: all 500ms linear;
-	transition: all 500ms linear;
 }
 
 .banner-title-txt:hover {
@@ -629,9 +621,9 @@ footer {
 /********************************************************** Media Queries */
 
 @media only screen and (min-width: 25em) {
-	.banner-title-txt {
-		padding-top: 20%;
-		font-size: 4rem;
+	.banner-title-txt,
+	.banner-title-txt h1{
+		font-size: 3rem;
 	}
 
 	.lightbox-content {
@@ -640,9 +632,9 @@ footer {
 }
 
 @media only screen and (min-width: 38em) {
-	.banner-title-txt {
-		font-size: 5rem;
-		padding-top: 20%;
+	.banner-title-txt,
+	.banner-title-txt h1 {
+		font-size: 6rem;
 	}
 
 	.scroll {
@@ -664,9 +656,9 @@ footer {
 }
 
 @media only screen and (min-width: 60em) {
-	.banner-title-txt {
-		font-size: 6rem;
-		padding-top: 20%;
+	.banner-title-txt,
+	.banner-title-txt h1 {
+		font-size: 9rem;
 	}	
 
 	.site-info p,

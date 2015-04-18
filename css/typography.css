@@ -41,8 +41,9 @@ fieldset, pre, table {
 
 h1, .exa {
   font-family: 'Cedarville Cursive', cursive;
-  font-size: 1.8020rem;
-  line-height: 1.6648;
+  font-size: 6rem;
+  line-height: 1.5;
+  font-weight: normal;
 }
 
 h2, .peta {
@@ -53,9 +54,9 @@ h2, .peta {
 }
 
 h3, .tera {
-  font-family: 'Cedarville Cursive', cursive;
-  font-size: 1.4238rem;
-  line-height: 1.0535;
+  color: #ddb904;
+  font-size: 1.2656rem;
+  line-height: 1.1852;
 }
 
 h4, .giga {
