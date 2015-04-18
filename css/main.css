@@ -163,9 +163,26 @@ img {
 		left: 0;
 		bottom: 3;
 	width: 100%;
+
+	-webkit-animation: fadein-a 8s ease-in-out;
+	animation: fadein-a 8s ease-in-out;
 }
 
-.scroll-txt{
+@-webkit-keyframes fadein-a {
+	0% 		{opacity: 0;}
+	10% 	{opacity: 0;}
+	20% 	{opacity: 0;}
+	100%	{opacity: 1;}
+}
+
+@-keyframes fadein-a {
+	0% 		{opacity: 0;}
+	10% 	{opacity: 0;}
+	20% 	{opacity: 0;}
+	100%	{opacity: 1;}
+}
+
+.scroll-txt {
 	color: #282830;
 	line-height: 1.25em;
 	margin: 1.25em auto;
@@ -184,7 +201,7 @@ img {
 	background-color: white;
 	border-radius: 50%;
 	height: 60px;
-	margin: 0;
+	margin: 0 0 1em 0;
 	padding: 0;
 	position: absolute;
 		bottom: 0;
