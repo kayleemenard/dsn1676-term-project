@@ -18,15 +18,8 @@ $thumbs.on('click', 'a', function (e) {
 
 $btnClose.on('click', function () { $lb.attr('data-state', 'hidden'); });
 
-/********************************************************** Top Animated Banner */
-var $nightSky = $('.banner');
-
-$nightSky.waypoint(function (direction) {
-	if (direction === 'up') { $nightSky.addClass('js-active-sky'); }
-	else { $nightSky.removeClass('js-active-sky'); } }, { offset: '10%' } );
-
 /********************************************************** Star Slideshow */
-$("document").ready(function() { $("#slideshow-img").cycle() })
+$("document").ready( function() { $("#slideshow-img").cycle() });
 
 /********************************************************** Smooth Scrolling */
 $('.nav').localScroll();
@@ -38,6 +31,6 @@ $('.site-info').localScroll();
 /********************************************************** Bottom Animated Banner */
 var $cityscape = $('.banner-bottom');
 
-$cityscape.waypoint(function (direction) {
+$cityscape.waypoint( function (direction) {
 	if (direction == 'down') { $cityscape.addClass('js-active-city'); }
-	else { $cityscape.removeClass('js-active-city'); } }, { offset: '85%' } );
+	else { $cityscape.removeClass('js-active-city'); } }, { offset: '85%' });
