@@ -29,6 +29,29 @@ img {
 	width: 100%;
 }
 
+a:focus {
+	outline: 9px solid #ddb904;
+}
+
+.skip-links {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.skip-links a {
+	background-color: #282830;
+	color: white;
+	font-weight: bold;
+	padding: 1em 1.25em;
+	position: absolute;
+		top: -4em;
+	text-decoration: none;	
+}
+
+.skip-links a:focus {
+	top: 0;
+}
 
 /************************************************************ Navigation Menu */
 .btn-nav {
@@ -69,6 +92,7 @@ img {
 }
 
 .nav li {
+	background-color: lightblue;
 	list-style: none;
 	width: 100%;
 }

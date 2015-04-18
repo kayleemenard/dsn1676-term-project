@@ -14,19 +14,28 @@
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body id="top" class="push-0 pad-0">
+	<ul class="skip-links">
+		<li><a href="#nav">Skip to Navigation</a></li>
+		<li><a href="#main">Skip to Main Content</a></li>
+		<li><a href="#zodiac">Skip to Zodiac Constellations Illustrations</a></li>
+		<li><a href="#stars">Skip to Brightest Stars Slideshow</a></li>
+		<li><a href="#planets">Skip to Planets of Our Solar System</a></li>
+		<li><a href="#footer">Skip to Footer</a></li>
+	</ul>
+
 <!-- Menu -->
-	<section class="navigation">
+	<div class="navigation">
 		<button class="btn-nav h3 bold text-left island">Menu</button>
-		<div class="nav">
+		<nav class="nav" id="nav" role="navigation">
 			<ul class="pad-none push-0">
 				<li class="gutter pad-t"><a href="#zodiac">Zodiac</a></li>
 				<li class="gutter pad-t"><a href="#stars">Notable Stars</a></li>
 				<li class="gutter pad-t pad-b"><a href="#planets">Planets</a></li>
 			</ul>
-		</div>
-	</section>	
+		</nav>
+	</div>	
 <!-- Animated Banner -->
-	<div class="banner pad-b push-2">
+	<header class="banner pad-b push-2" role="banner">
 		<div class="stars">
 			<img class="stars-01" src="images/stars-01.png" alt="Layer of twinkling stars">
 			<img class="stars-02" src="images/stars-02.png" alt="Layer of twinkling stars">
@@ -38,14 +47,14 @@
 		<div class="rays-wrap">
 			<img class="rays" src="images/rays.png" alt="Sun's rays beaming">
 		</div>
-		<a href="#contentinfo" class="banner-title-txt"><h1>Night's Sky</h1></a>
+		<a href="#zodiac" class="banner-title-txt"><h1>Night's Sky</h1></a>
 	 	<div class="scroll micro bold">
 	 		<div class="circle grid">
 		 		<a class="scroll-txt unit" href="#zodiac">Start<br>Gazing</a>
 		 	</div>	
 	 	</div>
-	</div>
-	<main id="contentinfo">
+	</header>
+	<main id="main" role="main">
 <!-- Constellations-->
 		<article id="zodiac">
 			<h2 class="text-center island pad-t-2 push-0">Zodiac Constellations</h2>
@@ -90,7 +99,7 @@
 	<!-- Lightbox -->
 			<div class="lightbox" data-state="hidden">
 				<div class="lightbox-container">
-					<button class="btn-close milli">Close</button>
+					<button class="btn-close micro">Close</button>
 					<div class="lightbox-content">
 						<img class="lightbox-image" alt="Graphic of Zodiac Constellations">
 					</div>
@@ -197,7 +206,7 @@
 		</article>		
 	</main>
 <!-- Footer -->	
-	<footer>
+	<footer id="footer" role="contentinfo">
 <!-- Animated SVG -->
 		<div class="banner-bottom">
 			<svg class="cityscape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2237.5 809">
