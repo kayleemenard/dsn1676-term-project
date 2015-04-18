@@ -91,9 +91,9 @@ img {
 
 .banner {
 	background-color: #282830;
+	overflow: hidden;
 	padding-top: 56.25%;
 	position: relative;
-	overflow: hidden;
 
 	-webkit-animation: sunset 8s linear;
 	animation: sunset 8s linear;
@@ -112,13 +112,13 @@ img {
 }
 
 .banner-title {
-		color: white;	
-		font-family: 'Cedarville Cursive', cursive;
-		position: absolute;
+	color: white;	
+	font-family: 'Cedarville Cursive', cursive;
+	position: absolute;
 		top: 0;
-		width: 100%;
+	width: 100%;
 
-		transform-origin: center center;
+	transform-origin: center center;
 
 	-webkit-animation: fadein-a 8s ease-in-out;
 	animation: fadein-a 8s ease-in-out;
@@ -141,12 +141,12 @@ img {
 .banner-title-txt {
 	display: block;
 	color: white;	
-		font-family: 'Cedarville Cursive', cursive;
-		font-size: 1.5rem;
+	font-family: 'Cedarville Cursive', cursive;
+	font-size: 1.5rem;
 	letter-spacing: 0.25rem;
 	margin:	auto;
 	padding-top: 20%;
-		text-align: center;
+	text-align: center;
 	text-decoration: none;
 
 	-webkit-transition: all 500ms linear;
@@ -160,8 +160,8 @@ img {
 /********************************************************** Start Spotting Button */
 .scroll {
 	position: absolute;
-		left: 0;
 		bottom: 3;
+		left: 0;
 	width: 100%;
 
 	-webkit-animation: fadein-a 8s ease-in-out;
@@ -224,9 +224,8 @@ img {
 	opacity: 0;
 	position: absolute;
 		top:0;
-	width: 100%;
-
 	transform-origin: center center;
+	width: 100%;
 
 	-webkit-animation: rays-rotate 10s linear;
 	animation: rays-rotate 10s linear;
@@ -235,21 +234,21 @@ img {
 @-webkit-keyframes rays-rotate {
 	0% 		{transform: rotate(0deg); opacity: 1;}
 	50%		{opacity: 1;}
-	100%		{transform: rotate(360deg); opacity: 0;}
+	100%	{transform: rotate(360deg); opacity: 0;}
 }
 
 @keyframes rays-rotate {
 	0% 		{transform: rotate(0deg); opacity: 1;}
 	50%		{opacity: 1;}
-	100%		{transform: rotate(360deg); opacity: 0;}
+	100%	{transform: rotate(360deg); opacity: 0;}
 }
 
 .rays-wrap {
 	position: absolute;
 		left:25%;
 		top:-25vw;
-	width: 50%;
 	transform-origin: center center;
+	width: 50%;	
 
 	-webkit-animation: rays-raise 10s ease-in-out;
 	animation: rays-raise 10s ease-in-out;
@@ -257,12 +256,12 @@ img {
 
 @-webkit-keyframes rays-raise {
 	0% 		{transform: translateY(0px);}
-	100%		{transform: translateY(-50vh);}
+	100%	{transform: translateY(-50vh);}
 }
 
 @keyframes rays-raise {
 	0% 		{transform: translateY(0px);}
-	100%		{transform: translateY(-50vh);}
+	100%	{transform: translateY(-50vh);}
 }
 
 .cloud-left {
@@ -279,19 +278,19 @@ img {
 @-webkit-keyframes slide-left {
 	0% 		{transform: translateX(0px); opacity: 1;}
 	50%		{opacity: 1;}
-	100%		{transform: translateX(-100vw); opacity: 0;}
+	100%	{transform: translateX(-100vw); opacity: 0;}
 }
 
 @keyframes slide-left {
 	0% 		{transform: translateX(0px); opacity: 1;}
 	50%		{opacity: 1;}
-	100%		{transform: translateX(-100vw); opacity: 0;}
+	100%	{transform: translateX(-100vw); opacity: 0;}
 }
 
 .cloud-right {
 	position: absolute;
-		right: 0;
 		bottom: 0;
+		right: 0;
 	opacity: 0;
 	width: 75%;
 
@@ -302,13 +301,13 @@ img {
 @-webkit-keyframes slide-right {
 	0% 		{transform: translateX(0px); opacity: 1;}
 	50%		{opacity: 1;}
-	100%		{transform: translateX(100vw); opacity: 0;}
+	100%	{transform: translateX(100vw); opacity: 0;}
 }
 
 @keyframes slide-right {
 	0% 		{transform: translateX(0px); opacity: 1;}
 	50%		{opacity: 1;}
-	100%		{transform: translateX(100vw); opacity: 0;}
+	100%	{transform: translateX(100vw); opacity: 0;}
 }
 
 /********************************************************** Nighttime Animation **/
@@ -337,8 +336,8 @@ img {
 	height: 100%;
 	opacity: 0;
 	position: absolute;
-		top: 0;
 		left: 0;
+		top: 0;
 
 	-webkit-animation: pulse-a 10s ease-in-out infinite;
 	animation: pulse-a 10s ease-in-out infinite;
@@ -376,8 +375,8 @@ img {
 	height: 100%;
 	opacity: 0;
 	position: absolute;
-		top: 0;
 		left: 0;
+		top: 0;
 
 	-webkit-animation: pulse-b 10s ease-in-out infinite;
 	animation: pulse-b 10s ease-in-out infinite;
@@ -412,8 +411,8 @@ img {
 .stars-03 {
 	height: 100%;
 	position: absolute;
-		top: 0;
 		left: 0;
+		top: 0;
 }
 
 /********************************************************** Constellation Images */
@@ -456,12 +455,12 @@ img {
 
 .lightbox {
 	background-color: rgba(0, 0, 0, 0.9);
+	opacity: 0;
 	position: fixed;
+		bottom: 0;	
 		left: 100%;
 		right: -100%;
 		top: 0;
-		bottom: 0;
-	opacity: 0;
 	z-index: 9999;
 
 	-webkit-transition: all 250ms linear;
@@ -469,8 +468,8 @@ img {
 }
 
 .lightbox[data-state="visible"] {
-	opacity: 1;
 	left: 0;
+	opacity: 1;	
 	right: 0;
 }
 
@@ -489,8 +488,8 @@ img {
 }
 
 .preview {
-	padding-top: 45%; 
 	padding-bottom: 45%;
+	padding-top: 45%; 
 }
 
 /********************************************************** Notable Stars Slideshow */
@@ -636,7 +635,7 @@ footer {
 	}
 
 	.lightbox-content {
-		width: calc(100vw - 25vw);
+		width: calc(100% - 25%);
 	}
 }
 
@@ -660,7 +659,7 @@ footer {
 	}
 
 	.lightbox-content {
-		width: calc(100vw - 50vw);
+		width: calc(100% - 50%);
 	}
 }
 
