@@ -125,21 +125,17 @@
 		<section class="star-slideshow grid island push">
 			<h2 class="star-h2 unit unis-xs-1 unit-s-1 unit-m-1 unit-l-1 text-center island push-0 white">Notable Stars</h2>
 			<div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1" id="slideshow-container">
-				<div id="slideshow-img">
-					<img class="pad-b" id="img1" src="images/star-slideshow-1.svg" alt="Graphic illustration of the star, Sirus, and a breif description" />
-					<img class="pad-b" id="img2" src="images/star-slideshow-2.svg" alt="Graphic illustration of the star, Sirus, and a breif description" />
-					<img class="pad-b" id="img3" src="images/star-slideshow-3.svg" alt="Graphic illustration of the star, Sirus, and a breif description" />
-					<img class="pad-b" id="img4" src="images/star-slideshow-4.svg" alt="Graphic illustration of the star, Sirus, and a breif description" />
-					<img class="pad-b" id="img5" src="images/star-slideshow-5.svg" alt="Graphic illustration of the star, Sirus, and a breif description" />
-					<img class="pad-b" id="img6" src="images/star-slideshow-6.svg" alt="Graphic illustration of the star, Sirus, and a breif description" />
-					<img class="pad-b" id="img7" src="images/star-slideshow-7.svg" alt="Graphic illustration of the star, Sirus, and a breif description" />
-					<img class="pad-b" id="img8" src="images/star-slideshow-8.svg" alt="Graphic illustration of the star, Sirus, and a breif description" />
-				</div>
-				<div id="left-pointer">
-					<img class="arrow-left" src="images/slideshow-arrow-left.svg" alt="Left arrow button for slideshow" />
-				</div>
-				<div id="right-pointer">
-					<img class="arrow-right" src="images/slideshow-arrow-right.svg" alt="Right arrow button for slideshow" />
+				<div id="slideshow-img" class="cycle-slideshow" data-cycle-fx=scrollHorz data-cycle-timeout=0>
+					<div href="#" class="cycle-prev"></div>
+					<div href="#" class="cycle-next"></div>
+					<img class="pad-b" id="img1" src="images/star-slideshow-1.svg" alt="Graphic illustration of the star, Sirus, and a brief description" />
+					<img class="pad-b" id="img2" src="images/star-slideshow-2.svg" alt="Graphic illustration of the star, Sirus, and a brief description" />
+					<img class="pad-b" id="img3" src="images/star-slideshow-3.svg" alt="Graphic illustration of the star, Sirus, and a brief description" />
+					<img class="pad-b" id="img4" src="images/star-slideshow-4.svg" alt="Graphic illustration of the star, Sirus, and a brief description" />
+					<img class="pad-b" id="img5" src="images/star-slideshow-5.svg" alt="Graphic illustration of the star, Sirus, and a brief description" />
+					<img class="pad-b" id="img6" src="images/star-slideshow-6.svg" alt="Graphic illustration of the star, Sirus, and a brief description" />
+					<img class="pad-b" id="img7" src="images/star-slideshow-7.svg" alt="Graphic illustration of the star, Sirus, and a brief description" />
+					<img class="pad-b" id="img8" src="images/star-slideshow-8.svg" alt="Graphic illustration of the star, Betelgeuse, and a brief description" />
 				</div>
 			</div>
 		</section>	
@@ -302,6 +298,7 @@
 	  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   	  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script>
 	  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
+  	  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/20140415/jquery.cycle2.min.js"></script>
 	  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
 	  <script src="js/main.js"></script>
 

@@ -23,7 +23,9 @@ $btnClose.on('click', function () {
 });
 
 /********************************************************** Star Slideshow */
-
+$("document").ready(function() {
+	$("#slideshow-img").cycle()
+})
 
 /********************************************************** Smooth Scrolling */
 $('.nav').localScroll();
