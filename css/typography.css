@@ -48,15 +48,15 @@ h1, .exa {
 
 h2, .peta {
   font-family: 'Cedarville Cursive', cursive;
-  font-size: 1.6018rem;
+  font-size: 2rem;
   letter-spacing: 1.25px;
   line-height: 1.8729;
 }
 
 h3, .tera {
-  color: #ddb904;
-  font-size: 1.2656rem;
-  line-height: 1.1852;
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 1.4238rem;
+  line-height: 1.0535;
 }
 
 h4, .giga {
@@ -65,7 +65,7 @@ h4, .giga {
 }
 
 h5, .mega {
-  font-family: 'Cedarville Cursive', cursive;
+  color: #ddb904;
   font-size: 1.1250rem;
   line-height: 1.3333;
 }
