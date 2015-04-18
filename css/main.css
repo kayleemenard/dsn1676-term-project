@@ -30,7 +30,7 @@ img {
 }
 
 a:focus {
-	outline: 9px solid #ddb904;
+	outline: 9px solid #Deca6f;
 }
 
 .skip-links {
@@ -201,7 +201,7 @@ a:focus {
 .scroll-txt {
 	color: #282830;
 	line-height: 1.25em;
-	margin: 1.25em auto;
+	margin: 1em auto;
 	text-align: center;
 	text-decoration: none;
 
