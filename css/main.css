@@ -29,6 +29,10 @@ img {
 	width: 100%;
 }
 
+button {
+	margin: 0;
+}
+
 a:focus {
 	outline: 9px solid #Deca6f;
 }
@@ -59,6 +63,7 @@ a:focus {
 	border: none;
 	color: white;
 	margin: 0;
+	overflow: hidden;
 	width: 100%;
 
 	-webkit-transition: all 200ms linear;
