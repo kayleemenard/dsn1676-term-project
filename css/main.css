@@ -472,12 +472,8 @@ img {
 	background-color: #ddb904;
 }
 
-#slideshow-img img {
-	height: 50vh;
+.cycle-slideshow {
 	margin: 0 auto;
-	position: absolute;
-		bottom: 0;
-	width: 100%;
 }
 
 .slideshow-directors {
