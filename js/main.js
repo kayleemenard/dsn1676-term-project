@@ -22,6 +22,18 @@ $btnClose.on('click', function () {
 	$lb.attr('data-state', 'hidden');
 });
 
+/********************************************************** Top Animated Banner */
+var $nightSky = $('.banner');
+
+$nightSky.waypoint(function (direction) {
+	if (direction == 'up') {
+		$nightSky.addClass('js-active-sky');
+	}
+	else {
+		$nightSky.removeClass('js-active-sky');
+	}
+}, { offset: '10%' } );
+
 /********************************************************** Star Slideshow */
 $("document").ready(function() {
 	$("#slideshow-img").cycle()
