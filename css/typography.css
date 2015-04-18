@@ -60,17 +60,12 @@ h3, .tera {
 }
 
 h4, .giga {
-  font-size: 1.2656rem;
-  line-height: 1.1852;
-}
-
-h5, .mega {
   color: #ddb904;
   font-size: 1.1250rem;
   line-height: 1.3333;
 }
 
-h6, .kilo {
+h5, .mega {
   font-size: 1.0000rem;
   line-height: 1.5000;
 }
