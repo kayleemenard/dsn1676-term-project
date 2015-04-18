@@ -436,6 +436,7 @@ img {
 		top: 0;
 		bottom: 0;
 	opacity: 0;
+	z-index: 1;
 
   -webkit-transition: all 250ms linear;
   transition: all 250ms ease-out;
