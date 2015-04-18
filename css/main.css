@@ -58,6 +58,7 @@ a:focus {
 	background-color: #ddb904;
 	border: none;
 	color: white;
+	margin: 0;
 	width: 100%;
 
 	-webkit-transition: all 200ms linear;
