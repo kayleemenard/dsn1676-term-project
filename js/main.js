@@ -23,16 +23,7 @@ $btnClose.on('click', function () {
 });
 
 /********************************************************** Star Slideshow */
-/*var $imgcount = 1;
-var $total = 8;
 
-function $slide(x) {
-	var starImage = document.getElementById('slideshow-img');
-	imagecount = 'imagecount' + x;
-	if(imagecount > total){ imagecount = 1;}
-	if(imagecount < 1){ imagecount = total;}
-	starImage.src = "images/star-slideshow" + imagecount + '.svg';
-}*/
 
 /********************************************************** Smooth Scrolling */
 $('.nav').localScroll();

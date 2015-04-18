@@ -471,52 +471,14 @@ img {
 	background-color: #ddb904;
 }
 
-#slideshow-container {
-	display: block;
-	height: 45vh;
-	margin: 0 auto;
-	position: relative;
-	width: 100%;
-}
-
-#slideshow-img img{
-	height: 40vh;
-	margin: 0 auto;
-	position: absolute;
-}
-
-#left-pointer {
-	display: block;
-	height: 45vh;
-	position: absolute;
-		left: 0;
-		top: 0;
-	width: 10vw;	
-}
-
-#right-pointer {
-	display: block;
-	height: 45vh;
-	position: absolute;
-		right: 0;
-		top: 0;
-	width: 10vw;	
-}
-
 .arrow-left {
-	height: 40px;
-	width: 40px;
-	position: absolute;
-		left: 0;
-		top: 40%;
+	height: 0;
+	visibility: hidden;
 }
 
 .arrow-right {
-	height: 40px;
-	width: 40px;
-	position: absolute;
-		right: 0;
-		top: 40%;	
+	height: 0;
+	visibility: hidden;
 }
 
 /********************************************************** Planet Images and Description */
@@ -653,30 +615,60 @@ footer {
 	}
 
 	#slideshow-container {
-		height: 60vh;
+		display: block;
+		height: 50vh;
 		margin: 0 auto;
 		position: relative;
 		width: 100%;
 	}
 
 	#slideshow-img {
-		height: 60vh;
+		background-color: orange;
+	}
+
+	#slideshow-img img {
+		height: 50vh;
 		margin: 0 auto;
 		position: absolute;
+			bottom: 0;
+		width: 100%;
+	}
+
+	#left-pointer {
+		display: block;
+		height: 45vh;
+		position: absolute;
+			left: 0;
+			top: 0;
+		width: 10vw;	
+	}
+
+	#right-pointer {
+		display: block;
+		height: 45vh;
+		position: absolute;
+			right: 0;
+			top: 0;
+		width: 10vw;	
 	}
 
 	.arrow-left {
-		height: 50px;
-		width: 50px;
-		top: 50%;
+		height: 40px;
+		width: 40px;
+		position: absolute;
+			left: 0;
+			top: 40%;
+		visibility: visible;
 	}
 
 	.arrow-right {
-		height: 50px;
-		width: 50px;
-		top: 50%;
+		height: 40px;
+		width: 40px;
+		position: absolute;
+			right: 0;
+			top: 40%;	
+		visibility: visible;
 	}
-
 
 	.planet-info {
 		padding-left: 0.7500em;
@@ -691,7 +683,7 @@ footer {
 	.banner-title-txt {
 		font-size: 6rem;
 		padding-top: 20%;
-	}
+	}	
 
 	.site-info p,
 	.site-info a {
