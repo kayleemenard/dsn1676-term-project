@@ -166,8 +166,9 @@ img {
 }
 
 .scroll-txt{
+	color: #282830;
 	line-height: 1.25em;
-	margin: 1.5em auto;
+	margin: 1.25em auto;
 	text-align: center;
 	text-decoration: none;
 
@@ -182,13 +183,13 @@ img {
 .circle {
 	background-color: white;
 	border-radius: 50%;
-	height: 70px;
+	height: 60px;
 	margin: 0;
 	padding: 0;
 	position: absolute;
 		bottom: 0;
-		left: calc(50% - 35px);
-	width: 70px;
+		left: calc(50% - 30px);
+	width: 60px;
 
 	-webkit-transition: all 250ms linear;
 	transition: all 250ms linear;
