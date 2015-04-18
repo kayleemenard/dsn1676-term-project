@@ -472,36 +472,27 @@ img {
 	background-color: #ddb904;
 }
 
-.cycle-prev {
-	background-image: url(../images/slideshow-arrow-left.svg) no-repeat;
-	display: block;
-	position: absolute;
-		left: 0;
-}
-
-.cycle-next {
-	background-image: url(../images/slideshow-arrow-right.svg) no-repeat;
-	display: block;
-	position: absolute;
-		right: 0;
-}
-
-.cycle-prev, .cycle-next {
-	position: absolute;
-	top: 0;
-	width: 30%;
-	opacity: 1;
-	z-index: 9000;
-	height: 100%;
-	cursor: pointer;
-}
-
 #slideshow-img img {
 	height: 50vh;
 	margin: 0 auto;
 	position: absolute;
 		bottom: 0;
 	width: 100%;
+}
+
+.slideshow-directors {
+	color: white;
+	width: 100%;
+}
+
+#prev {
+	display: inline-block;
+	text-align: right;
+}
+
+#next {
+	display: inline-block;
+	text-align: left;
 }
 
 /********************************************************** Planet Images and Description */
