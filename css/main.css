@@ -445,6 +445,7 @@ a:focus {
 	text-align: center;
 	text-decoration: none;
 	width: 100%;
+
 }
 
 .thumbnails li {
@@ -452,23 +453,24 @@ a:focus {
 }
 
 .preview-img {
-	background-image: url(../images/zodiac_01.svg);
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 .preview-text { 
 	background:#fff;
 	font-weight: bold; 
-	height: 100%;
+	margin: 0;
+	padding-bottom: 45%;
+	padding-top: 45%;
 	opacity:0;
-	padding-top: 0; 
-	width:auto; 
 }
 
 .preview-img:hover 
 .preview-text { 
 	color: black;
+	margin: 0;
 	opacity:0.6; 
 }
 
