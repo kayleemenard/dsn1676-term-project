@@ -459,11 +459,11 @@ a:focus {
 }
 
 .preview-text { 
-	background:#fff;
+	background: #ddb904;
 	font-weight: bold; 
 	margin: 0;
-	padding-bottom: 45%;
-	padding-top: 45%;
+	padding-bottom: 10%;
+	padding-top: 80%;
 	opacity:0;
 }
 
