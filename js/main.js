@@ -20,6 +20,7 @@ $btnClose.on('click', function () { $lb.attr('data-state', 'hidden'); });
 
 /********************************************************** Star Slideshow */
 $("document").ready( function() { $("#slideshow-img").cycle() });
+ 
 
 /********************************************************** Smooth Scrolling */
 $('.nav').localScroll();
